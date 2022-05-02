@@ -1,6 +1,6 @@
 version: '3'
 services:
   discordbot:
-    image: martullo
+    image: salero33/martullo
     container_name: martullo-discordbot
     restart: unless-stopped
