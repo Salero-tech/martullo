@@ -1,6 +1,12 @@
 version: '3'
 services:
   discordbot:
-    image: salero33/martullo
+    image: test3
     container_name: martullo-discordbot
     restart: unless-stopped
+    volumes:
+      - ./data:/usr/src/bot/data/
+    environment:
+      - TOCKEN=discordTocken
+      - PREFIX=?
+      - ACTIVITY=status
